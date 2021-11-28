@@ -28,8 +28,7 @@
       <section class="form">
         <div class="container">
           <h1 class="form__title">Подбор программы</h1>
-          <p class="form__text">Заполните анкету, и мы подберем</p>
-          <p class="form__text">программу питания для вашего кота</p>
+          <p class="form__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
 
           <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset">
@@ -78,7 +77,8 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Комментарий</legend>
-              <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__textarea" name="comment" id="comment-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment-textarea">Комментарий</label>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__heading">Дополнительно</legend>
