@@ -2,7 +2,7 @@ body {
   margin: 0;
   width: 100vw;
   height: auto;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -12,11 +12,20 @@ body {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, text {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+text {
   margin: 0;
 }
 
@@ -29,6 +38,7 @@ ul {
   list-style-type: none;
   margin: 0;
 }
+
 ul,
 ol {
   padding: 0;

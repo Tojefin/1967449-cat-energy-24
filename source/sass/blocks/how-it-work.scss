@@ -1,12 +1,13 @@
 .how-it-work {
   margin-bottom: 53px;
+
   & .container {
     padding-bottom: 0;
   }
 }
 
 .how-it-work__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -15,18 +16,17 @@
 }
 
 .how-it-work__item {
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 26px;
   }
 }
 
 .how-it-work__item-text {
   padding-left: 80px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
-
 }
