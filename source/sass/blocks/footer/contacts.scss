@@ -1,0 +1,40 @@
+.contacts {
+  & .inner {
+    padding: 26px 20px;
+    display: flex;
+  }
+}
+
+.contacts__title {
+  display: inline-block;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.contacts__text {
+  display: inline-block;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+  width: 50%;
+}
+
+.contacts__widget {
+  height: 362px;
+}
+
+.contacts__map {
+  border: none;
+  background: blue url(../img/map.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}

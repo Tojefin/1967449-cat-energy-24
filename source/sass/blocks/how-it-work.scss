@@ -1,0 +1,32 @@
+.how-it-work {
+  margin-bottom: 53px;
+  & .container {
+    padding-bottom: 0;
+  }
+}
+
+.how-it-work__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+
+.how-it-work__item {
+  &:not(:last-child){
+    margin-bottom: 26px;
+  }
+}
+
+.how-it-work__item-text {
+  padding-left: 80px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+}
