@@ -1,0 +1,43 @@
+.catalogs__item {
+  background: $basic_grey;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.catalogs__item-box {
+  padding: 30px 20px 18px 20px;
+}
+
+.catalogs__item-title {
+  padding-left: calc(91px - 20px);
+  margin-bottom: 29px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.catalogs__item-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+  color: $special_dark-grey;
+}
+
+.catalogs__item-link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}

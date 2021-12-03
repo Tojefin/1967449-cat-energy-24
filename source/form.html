@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
+    <script defer src="/js/menu-toggle.js"></script>
   </head>
   <body>
 
     <header class="header">
       <div class="container">
         <a href="#" class="logo">
-          <img src="img\htmlacademy.svg" alt="Логотип" class="logo__img">
+          <img src="img\logo-mobile.svg" alt="Логотип" class="logo__img">
         </a>
-        <nav class="menu menu--open">
-          <button class="menu__button" type="button" name="menu-toggle"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="menu__list">
+        <nav class="menu">
+          <button class="menu__button" type="button" name="menu-toggle" id="menu-button" onclick="toggleMenu()"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="menu__list" id="menu-list">
             <li class="menu__item"><a href="index.html">Главная</a></li>
             <li class="menu__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="menu__item menu__item--active"><a href="form.html">Подбор программы</a></li>
@@ -40,11 +42,11 @@
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="weight-field">Вес (кг):<sup>*</sup></label>
-                  <input class="form__input-text" type="text" name="weight" id="weight-field" placeholder="7" required>
+                  <input class="form__input-text" type="number" name="weight" id="weight-field" placeholder="7" required>
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="age-field">Возраст (лет):</label>
-                  <input class="form__input-text" type="text" name="age" id="age-field" placeholder="7">
+                  <input class="form__input-text" type="number" name="age" id="age-field" placeholder="7">
                 </li>
               </ul>
               <ul class="form__type">
@@ -81,7 +83,7 @@
               <label class="visually-hidden" for="comment-textarea">Комментарий</label>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__heading">Дополнительно</legend>
+              <legend class="form__legend">Дополнительно</legend>
               <ul class="form__extra">
                 <li class="form__item">
                   <input class="form__input-check" type="checkbox" name="sweetener" id="sweetener-check" checked>
@@ -103,18 +105,18 @@
             </fieldset>
             <button class="form__submit" type="submit">Отправить заявку</button>
           </form>
-          <small class="form__required-mark"><sup>*</sup> — обязательные поля</small>
+          <small class="form__required-mark"><sup>*</sup> — Обязательные поля</small>
         </div>
       </section>
 
     </main>
 
     <footer class="footer">
-      <section class="contacts">
+      <section class="contacts contacts--gray">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="container">
+        <div class="inner">
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
         </div>
         <div class="contacts__widget">
           <iframe src="" class="contacts__map"></iframe>
@@ -123,22 +125,22 @@
 
       <div class="container">
         <a href="#" class="footer__logo">
-          <img src="img\htmlacademy.svg" alt="Логотип" class="footer__logo-img">
+          <img src="img\logo-text.svg" alt="Логотип" class="footer__logo-img">
         </a>
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a href="#"> <img src="img\htmlacademy.svg" alt="Вконтакте" class="footer__social-icon"> </a>
+            <a href="#"> <img src="img\icon_vkontakte.svg" alt="Вконтакте" class="footer__social-icon"> </a>
           </li>
           <li class="footer__social-item">
-            <a href="#"> <img src="img\htmlacademy.svg" alt="Instagram" class="footer__social-icon"> </a>
+            <a href="#"> <img src="img\icon_instagram.svg" alt="Instagram" class="footer__social-icon"> </a>
           </li>
           <li class="footer__social-item">
-            <a href="#"> <img src="img\htmlacademy.svg" alt="Facebook" class="footer__social-icon"> </a>
+            <a href="#"> <img src="img\icon_facebook.svg" alt="Facebook" class="footer__social-icon"> </a>
           </li>
         </ul>
         <div class="copyright">
           <p class="copyright__text">HTML Academy</p>
-          <a href="#"> <img src="img\htmlacademy.svg" alt="Лого HTML Academy" class="copyright__icon"> </a>
+          <a href="#"> <img src="img\logo-copyright.svg" alt="Лого HTML Academy" class="copyright__icon"> </a>
         </div>
       </div>
     </footer>

@@ -1,0 +1,37 @@
+.footer {
+  & .container {
+    padding: 0 20px;
+    background: $basic_grey;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 39px;
+  margin-bottom: 32px;
+}
+
+.footer__logo-img {
+  width: 128px;
+  height: 24px;
+}
+
+.footer__social {
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-item {
+  &:not(:last-child) {
+    margin-right: 33px;
+  }
+}
+
+.footer__social-icon {
+  width: 22px;
+  height: 22px;
+}
