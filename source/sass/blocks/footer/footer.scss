@@ -1,10 +1,7 @@
 .footer {
-  &--gray {
-    background: $basic_grey;
-  }
-
   & .container {
     padding: 0 20px;
+    background: $basic_grey;
   }
 }
 

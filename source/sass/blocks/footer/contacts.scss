@@ -1,4 +1,7 @@
 .contacts {
+  &--gray {
+    background: $basic_grey;
+  }
   & .inner {
     padding: 26px 20px;
     display: flex;
