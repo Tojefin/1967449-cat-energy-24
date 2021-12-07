@@ -1,8 +1,23 @@
 .how-it-work {
   margin-bottom: 53px;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    padding-bottom: 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
   & .container {
     padding-bottom: 0;
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 71px;
+    }
   }
 }
 
@@ -13,11 +28,45 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 42px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 32px;
+  }
+}
+
+.how-it-work__list {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 80px;
+  }
 }
 
 .how-it-work__item {
   &:not(:last-child) {
     margin-bottom: 26px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 280px;
+    width: 250px;
+    position: relative;
   }
 }
 
@@ -29,4 +78,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+    position: absolute;
+    bottom: 57px;
+  }
 }

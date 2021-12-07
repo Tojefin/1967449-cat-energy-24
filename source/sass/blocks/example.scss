@@ -1,9 +1,25 @@
 .example {
   background: #eaeaea;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    background: #ffffff;
+  }
 
   & .container {
     padding-top: 25px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 43px;
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 136px 460px;
+    }
   }
 }
 
@@ -14,6 +30,26 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 0;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.example__text {
+  @media screen and (min-width: 1440px) {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .example__story {
@@ -24,13 +60,33 @@
   line-height: 18px;
   color: $special_dark-grey;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 70px 0;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 436px;
+  }
 }
 
 .example__info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 255px;
+    justify-content: left;
+  }
 }
 
 .example__info-block {
@@ -44,6 +100,21 @@
   border-radius: 3px;
   width: 124px;
   height: 56px;
+  margin-bottom: 34px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 162px;
+    height: 72px;
+  }
+
+  &:first-child {
+    margin-right: 32px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 42px;
+    }
+  }
 }
 
 .example__info-title {
@@ -55,6 +126,11 @@
   text-transform: uppercase;
   text-align: center;
   color: $black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__info-description {
@@ -74,10 +150,25 @@
   align-items: center;
   text-align: center;
   color: $special_dark-grey;
+
+  @media screen and (min-width: 768px) {
+    width: max-content;
+    position: relative;
+    padding: 0 9px;
+    margin: auto;
+    top: 12px;
+    right: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background: #ffffff;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background: #eaeaea;
+  }
 }
 
 .example__total {
-  margin-bottom: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -85,12 +176,49 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
+  flex-grow: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 174px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 55px;
+    max-width: 100%;
+  }
+}
+
+.example__slider {
+  @media screen and (min-width: 768px) {
+    margin: 0 -30px;
+    background: #eaeaea;
+    height: 462px;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 -50vw;
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 .example__slider-list {
   display: flex;
   margin-bottom: 15px;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 29px;
+    justify-content: center;
+  }
 }
 
 .example__slider-img {
@@ -102,6 +230,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 61px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .example__range-button {
@@ -122,4 +257,10 @@
   width: 85px;
   height: 14px;
   margin: 0 13px;
+
+  @media screen and (min-width: 768px) {
+    height: 6px;
+    width: 426px;
+    margin: 0 23px;
+  }
 }
