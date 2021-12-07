@@ -7,8 +7,47 @@
   margin-bottom: 200px;
   position: relative;
 
+  @media screen and (min-width: 768px) {
+    background: none;
+    background-size: cover;
+    box-shadow: none;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 520px;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
+  }
+
   & .container {
     height: 302px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 117px;
+      height: auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-left: 190px;
+      padding-top: 110px;
+    }
+  }
+
+  &::before {
+    @media screen and (min-width: 1440px) {
+      content: "";
+      background: #68b738 url("../img/index-background-desktop.png") no-repeat center top;
+      background-size: cover;
+      background-position-x: 5%;
+      box-shadow: inset 0 0 0 1000px rgb(104 183 56 / 85%);
+      width: 50vw;
+      height: 694px;
+      position: absolute;
+      top: -120px;
+      z-index: -1;
+    }
   }
 
   &::after {
@@ -20,6 +59,23 @@
     top: 170px;
     right: 0;
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      z-index: -1;
+      width: 609px;
+      height: 700px;
+      background-size: contain;
+      left: 70px;
+      top: 200px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 552px;
+      height: 499px;
+      background-size: contain;
+      left: 18vw;
+      top: 20px;
+    }
   }
 }
 
@@ -31,6 +87,14 @@
   line-height: 36px;
   margin-top: 27px;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+    width: 414px;
+    text-align: left;
+  }
 }
 
 .promo__text {
@@ -41,6 +105,14 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 302px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+    width: 414px;
+    text-align: left;
+  }
 }
 
 .promo__button {
@@ -59,4 +131,12 @@
   color: #ffffff;
   position: relative;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 }

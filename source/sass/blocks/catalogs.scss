@@ -1,13 +1,49 @@
+.catalogs {
+  & .container {
+    @media screen and (min-width: 1440px) {
+      padding-top: 82px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.catalogs__list {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .catalogs__item {
   background: $basic_grey;
 
+  @media screen and (min-width: 1440px) {
+    width: 40vw;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .catalogs__item-box {
   padding: 30px 20px 18px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 77px 53px 57px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 77px 52px 55px;
+  }
 }
 
 .catalogs__item-title {
@@ -19,6 +55,18 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
 }
 
 .catalogs__item-text {
@@ -30,6 +78,20 @@
   padding-bottom: 23px;
   margin-bottom: 19px;
   color: $special_dark-grey;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    padding: 0;
+    color: $black;
+    max-width: 340px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 23px;
+    max-width: none;
+  }
 }
 
 .catalogs__item-link {
@@ -40,4 +102,9 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

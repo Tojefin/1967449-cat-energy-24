@@ -2,6 +2,13 @@
   & .container {
     padding: 0 20px;
     background: $basic_grey;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 58px 30px 55px;
+    }
   }
 }
 
@@ -10,6 +17,11 @@
   justify-content: center;
   padding-top: 39px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .footer__logo-img {
@@ -23,11 +35,17 @@
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
 }
 
 .footer__social-item {
   &:not(:last-child) {
-    margin-right: 33px;
+    margin-right: 29px;
   }
 }
 
