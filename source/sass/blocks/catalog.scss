@@ -4,6 +4,18 @@
   }
 }
 
+.catalog__list {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .catalog__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -20,6 +32,10 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-top: 1px solid $special_grey-2;
+
+  @media screen and (min-width: 768px) {
+    height: 430px;
+  }
 
   &:last-child {
     border-bottom: 1px solid $special_grey-2;

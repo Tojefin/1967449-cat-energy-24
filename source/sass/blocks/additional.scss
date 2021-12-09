@@ -1,6 +1,11 @@
 .additional {
   & .container {
     padding: 0 20px 35px;
+
+    @media screen and (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: 70% 20%;
+    }
   }
 }
 
