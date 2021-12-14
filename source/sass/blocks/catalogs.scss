@@ -16,6 +16,7 @@
 
 .catalogs__item {
   background: $basic_grey;
+  position: relative;
 
   @media screen and (min-width: 1440px) {
     width: 40vw;
@@ -30,6 +31,59 @@
 
     @media screen and (min-width: 1440px) {
       margin-bottom: 0;
+      margin-right: 80px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 53px;
+    width: 50px;
+    top: 21px;
+    left: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../img/catalogs_first.svg");
+
+    @media screen and (min-width: 768px) {
+      height: 211px;
+      width: 200px;
+      top: 81px;
+      right: 62px;
+      left: auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 106px;
+      width: 100px;
+      top: 41px;
+      right: auto;
+      left: 52px;
+    }
+  }
+
+  &:last-child::after {
+    height: 50px;
+    width: 67px;
+    top: 24px;
+    left: 13px;
+    background-image: url("../../img/catalogs_second.svg");
+
+    @media screen and (min-width: 768px) {
+      height: 200px;
+      width: 268px;
+      top: 91px;
+      right: 28px;
+      left: auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 100px;
+      width: 134px;
+      top: 47px;
+      right: auto;
+      left: 33px;
     }
   }
 }
@@ -78,6 +132,7 @@
   padding-bottom: 23px;
   margin-bottom: 19px;
   color: $special_dark-grey;
+  border-bottom: 1px solid #d9d9d9;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -86,10 +141,12 @@
     padding: 0;
     color: $black;
     max-width: 340px;
+    border-bottom: none;
   }
 
   @media screen and (min-width: 1440px) {
     margin-bottom: 23px;
+    min-height: 72px;
     max-width: none;
   }
 }
@@ -102,9 +159,20 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 24px;
+    top: 25%;
+    right: -40px;
+    background: url("../../img/arrow_ico.svg");
   }
 }
