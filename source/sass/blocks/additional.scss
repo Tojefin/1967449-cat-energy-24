@@ -1,10 +1,19 @@
 .additional {
+  overflow: hidden;
+
   & .container {
-    padding: 0 20px 35px;
+    padding-top: 0;
+    padding-bottom: 35px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 76px;
+    }
 
     @media screen and (min-width: 1440px) {
       display: grid;
       grid-template-columns: 70% 20%;
+      justify-content: space-between;
+      padding-bottom: 86px;
     }
   }
 }
@@ -16,4 +25,43 @@
   font-size: 24px;
   line-height: 24px;
   padding: 25px 22px 36px 19px;
+  position: relative;
+  max-width: fit-content;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 46px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      position: absolute;
+      border-bottom: 2px solid #68b738;
+      top: 24px;
+      right: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 40px;
+    margin-left: 70px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    border-bottom: 2px solid #68b738;
+    top: 40px;
+    left: 100%;
+
+    @media screen and (min-width: 768px) {
+      top: 24px;
+    }
+  }
 }

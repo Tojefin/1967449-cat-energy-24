@@ -1,11 +1,20 @@
 .form {
   border-top: 1px solid #d9d9d9;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    border-top: none;
+  }
 
   & .container {
     padding: 27px 20px 32px 20px;
 
     @media screen and (min-width: 768px) {
-      padding: 70px 65px 67px 72px;
+      padding: 64px 67px 72px 70px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 73px 110px 82px;
     }
   }
 }
@@ -17,6 +26,12 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 37px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .form__text {
@@ -27,6 +42,12 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }
 
 .form__fieldset {
@@ -43,6 +64,39 @@
   line-height: 26px;
   max-width: 207px;
   padding-right: 20px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: none;
+    padding-right: 42px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      position: absolute;
+      border-bottom: 2px solid #68b738;
+      top: 24px;
+      right: 100%;
+      margin-right: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    border-bottom: 2px solid #68b738;
+    top: 15px;
+    left: 100%;
+
+    @media screen and (min-width: 768px) {
+      top: 24px;
+    }
+  }
 }
 
 .form__info {
@@ -53,23 +107,49 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+  }
 
   @media screen and (min-width: 1440px) {
-    width: 43%;
+    width: 46%;
     display: inline-block;
+    margin-right: 80px;
+  }
+
+  & .form__item:last-child {
+    padding-bottom: 0;
   }
 }
 
 .form__item {
-  padding: 14px 0;
+  padding-bottom: 14px;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+  }
 }
 
 .form__label {
   white-space: nowrap;
   width: inherit;
   margin-right: 12px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .form__input-text {
@@ -83,24 +163,43 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0 20px;
+    height: 52px;
+  }
 }
 
 .form__type {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 20px 0;
+  margin: 0 -20px;
+  padding: 22px 20px;
   margin-bottom: 26px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
 
+  @media screen and (min-width: 768px) {
+    border: 1px solid #e5e5e5;
+    margin: 0 0 75px 0;
+    min-height: 196px;
+
+    & .form__item {
+      padding-bottom: 13px;
+    }
+  }
+
   @media screen and (min-width: 1440px) {
-    width: 43%;
+    width: 47%;
     display: inline-block;
+    position: relative;
+    top: -10px;
+  }
+
+  & .form__item:last-child {
+    padding-bottom: 0;
   }
 }
 
@@ -109,30 +208,71 @@
   height: 30px;
   margin: 0;
   margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__contacts {
   padding: 35px 0 23px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
 
+  @media screen and (min-width: 768px) {
+    padding: 75px 0 65px;
+
+    & .form__label {
+      margin-right: 18px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+
+    & .form__label {
+      margin-right: 20px;
+      max-width: fit-content;
+    }
+  }
+
   & .form__item {
+    position: relative;
+
     @media screen and (min-width: 1440px) {
       width: 43%;
       display: inline-flex;
     }
   }
+
+  & .form__item:first-child::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 13px;
+    background-image: url("../../img/icon_email.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 16px;
+  }
+
+  & .form__item:last-child::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icon_phone.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 13px;
+  }
 }
 
 .form__textarea {
   display: block;
-  margin-top: 37px;
-  margin-bottom: 22px;
+  margin: 37px 0 22px;
   padding: 9px 10px;
   border: 1px solid #e7e7e7;
   width: 100%;
@@ -145,20 +285,27 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 75px 0 65px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 174px;
+  }
 }
 
 .form__extra {
   padding: 34px 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
+    padding: 55px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -170,8 +317,16 @@
     padding: 0;
   }
 
+  & .form__label {
+    color: $black;
+  }
+
   & .form__item:not(:last-child) {
     margin-bottom: 13px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -202,6 +357,8 @@
 
   @media screen and (min-width: 768px) {
     width: 45%;
+    height: 52px;
+    font-size: 20px;
   }
 }
 
@@ -218,5 +375,6 @@
 
   @media screen and (min-width: 768px) {
     width: 45%;
+    font-size: 16px;
   }
 }

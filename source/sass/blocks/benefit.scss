@@ -7,7 +7,46 @@
   position: relative;
   background: rgba(104, 183, 56) url("../img/benefit.png") no-repeat center top;
   background-size: cover;
+  background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);
+
+  @media screen and (min-width: 768px) {
+    background-position: 0 60%;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-position: 130% 60%;
+    min-height: 288px;
+    margin: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media screen and (min-width: 768px) {
+      width: 80px;
+      height: 82px;
+      left: 77px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 55px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 
 .benefit__text {
@@ -21,4 +60,16 @@
   line-height: 20px;
   text-align: center;
   color: $white;
+
+  @media screen and (min-width: 768px) {
+    right: 124px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: auto;
+    right: auto;
+    transform: none;
+  }
 }
