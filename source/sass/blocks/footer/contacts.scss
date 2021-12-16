@@ -56,6 +56,16 @@
     width: 159px;
     text-align: right;
     margin-left: auto;
+
+    & br:last-of-type {
+      display: block;
+      padding-top: 20px;
+      content: "";
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    text-align: left;
   }
 }
 
