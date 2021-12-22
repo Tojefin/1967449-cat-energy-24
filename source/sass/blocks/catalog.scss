@@ -103,21 +103,11 @@
 }
 
 .catalog__item-img {
-  flex-basis: 50%;
-  width: 140px;
-  height: 112px;
-  text-align: center;
-  margin: 0 auto;
-  object-fit: scale-down;
+  transform: translate(0, 10%);
+  display: inline-block;
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    left: 50%;
-    width: 168px;
-    height: 200px;
-    transform: translate(-50%, 0);
-    top: -20%;
-    object-fit: cover;
+    transform: translate(0, -10%);
   }
 }
 
