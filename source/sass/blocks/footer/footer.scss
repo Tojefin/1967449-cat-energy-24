@@ -54,6 +54,19 @@
 }
 
 .footer__social-icon {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 20px;
+  fill: $special_grey-2;
+  stroke: $special_grey-2;
+
+  &:hover {
+    fill: $basic_green;
+    stroke: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    stroke: $basic_green;
+    opacity: 0.3;
+  }
 }
