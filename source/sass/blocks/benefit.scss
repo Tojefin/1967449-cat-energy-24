@@ -17,10 +17,17 @@
   }
 
   @media screen and (min-width: 768px) {
-    background: rgba(104, 183, 56) url("../img/benefit@2x.png") no-repeat center top;
+    background: rgba(104, 183, 56) url("../img/benefit.png") no-repeat center top;
     background-position: 50% 60%;
     background-size: cover;
     height: 200px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: rgba(104, 183, 56) url("../img/benefit@2x.png") no-repeat center top;
+      background-position: 50% 60%;
+      background-size: cover;
+      height: 200px;
+    }
   }
 
   @media screen and (min-width: 1440px) {

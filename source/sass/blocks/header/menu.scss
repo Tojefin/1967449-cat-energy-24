@@ -41,6 +41,12 @@
   right: -20px;
   z-index: 1;
 
+  &--white a{
+    @media screen and (min-width: 1440px) {
+      color: $white;
+    }
+  }
+
   &--open {
     display: block;
   }
@@ -88,6 +94,12 @@
   &--active {
     @media screen and (min-width: 768px) {
       border-bottom: 2px solid $basic_green;
+    }
+  }
+
+  &--white {
+    @media screen and (min-width: 768px) {
+      border-bottom: 2px solid $white;
     }
   }
 }
