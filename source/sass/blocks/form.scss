@@ -248,6 +248,14 @@
   background-color: $white;
   position: relative;
 
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   &:checked::after {
     position: absolute;
     content: "";
@@ -377,8 +385,16 @@
   height: 30px;
   border: 1px solid $special_grey;
 
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   &:checked {
-    background: url("../../img/check.svg") no-repeat 50% 50%;
+    background: url("../img/check.svg") no-repeat 50% 50%;
   }
 }
 

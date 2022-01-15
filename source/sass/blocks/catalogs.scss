@@ -44,7 +44,7 @@
     left: 22px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../../img/catalogs_first.svg");
+    background-image: url("../img/catalogs_first.svg");
 
     @media screen and (min-width: 768px) {
       height: 211px;
@@ -68,7 +68,7 @@
     width: 67px;
     top: 24px;
     left: 13px;
-    background-image: url("../../img/catalogs_second.svg");
+    background-image: url("../img/catalogs_second.svg");
 
     @media screen and (min-width: 768px) {
       height: 200px;
@@ -161,6 +161,16 @@
   text-transform: uppercase;
   position: relative;
 
+  &:hover {
+    &::after {
+      right: -50px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
@@ -173,6 +183,7 @@
     width: 24px;
     top: 25%;
     right: -40px;
-    background: url("../../img/arrow_ico.svg");
+    background: url("../img/arrow_ico.svg");
+    transition: all 0.5s ease;
   }
 }

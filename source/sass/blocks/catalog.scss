@@ -84,7 +84,7 @@
     content: "";
     width: 30px;
     height: 30px;
-    background-image: url("../../img/plus.svg");
+    background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
     background-size: cover;
     top: 25px;
@@ -191,6 +191,14 @@
   text-transform: uppercase;
   background: $basic_green;
   color: $white;
+
+  &:hover {
+    background: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog__more-title {
@@ -252,4 +260,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
