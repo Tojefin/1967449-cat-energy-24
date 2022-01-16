@@ -31,6 +31,14 @@
 .footer__logo-img {
   width: 128px;
   height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social {
@@ -57,16 +65,13 @@
   width: 30px;
   height: 20px;
   fill: $special_grey-2;
-  stroke: $special_grey-2;
 
   &:hover {
     fill: $basic_green;
-    stroke: $basic_green;
   }
 
   &:active {
     fill: $basic_green;
-    stroke: $basic_green;
     opacity: 0.3;
   }
 }

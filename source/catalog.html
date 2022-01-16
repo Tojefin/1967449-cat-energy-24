@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preload" href="./fonts/oswaldregular.woff" as="font" type="font/woff">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" type="font/woff">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="./css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/icon.svg">
-    <link rel="manifest" href="manifest.webmanifest">
-    <script defer src="/js/menu-toggle.js"></script>
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/icon.svg">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <script defer src="./js/menu-toggle.js"></script>
   </head>
   <body>
 
@@ -36,8 +40,8 @@
             <li class="catalog__item">
               <a href="#">
                 <picture class="catalog__item-img">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop_2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile_2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png">
                   <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png">
@@ -49,15 +53,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">500 г</th>
+                    <td class="catalog__item-value">500 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Курица</th>
+                    <td class="catalog__item-value">Курица</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">700 р.</th>
+                    <td class="catalog__item-value">700 р.</td>
                   </tr>
                 </table>
               </div>
@@ -66,9 +70,9 @@
             <li class="catalog__item">
               <a href="#">
                 <picture class="catalog__item-img">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/catalog-2-desktop.webp 1x, img/catalog/catalog-2-desktop_2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-2-desktop.webp 1x, img/catalog/catalog-2-desktop_2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/catalog-2-mobile.webp 1x, img/catalog/catalog-2-mobile_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/catalog-2-desktop.webp 1x, img/catalog/catalog-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-2-desktop.webp 1x, img/catalog/catalog-2-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/catalog-2-mobile.webp 1x, img/catalog/catalog-2-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/catalog/catalog-2-desktop.png 1x, img/catalog/catalog-2-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/catalog-2-desktop.png 1x, img/catalog/catalog-2-desktop@2x.png 2x">
                   <img srcset="img/catalog/catalog-2-mobile.png 1x, img/catalog/catalog-2-mobile@2x.png 2x" alt="Товар">
@@ -79,15 +83,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">1000 г</th>
+                    <td class="catalog__item-value">1000 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Курица</th>
+                    <td class="catalog__item-value">Курица</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">1000 р.</th>
+                    <td class="catalog__item-value">1000 р.</td>
                   </tr>
                 </table>
               </div>
@@ -106,15 +110,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">500 г</th>
+                    <td class="catalog__item-value">500 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Рыба</th>
+                    <td class="catalog__item-value">Рыба</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">700 р.</th>
+                    <td class="catalog__item-value">700 р.</td>
                   </tr>
                 </table>
               </div>
@@ -133,15 +137,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">1000 г</th>
+                    <td class="catalog__item-value">1000 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Рыба</th>
+                    <td class="catalog__item-value">Рыба</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">1000 р.</th>
+                    <td class="catalog__item-value">1000 р.</td>
                   </tr>
                 </table>
               </div>
@@ -160,15 +164,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">500 г</th>
+                    <td class="catalog__item-value">500 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Гречка</th>
+                    <td class="catalog__item-value">Гречка</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">400 р.</th>
+                    <td class="catalog__item-value">400 р.</td>
                   </tr>
                 </table>
               </div>
@@ -187,15 +191,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">1000 г</th>
+                    <td class="catalog__item-value">1000 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Гречка</th>
+                    <td class="catalog__item-value">Гречка</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">1000 р.</th>
+                    <td class="catalog__item-value">1000 р.</td>
                   </tr>
                 </table>
               </div>
@@ -214,15 +218,15 @@
                 <table class="catalog__item-stats">
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Масса</th>
-                    <td class="catalog__item-value">500 г</th>
+                    <td class="catalog__item-value">500 г</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Вкус</th>
-                    <td class="catalog__item-value">Рис</th>
+                    <td class="catalog__item-value">Рис</td>
                   </tr>
                   <tr class="catalog__item-row">
                     <th class="catalog__item-text">Цена</th>
-                    <td class="catalog__item-value">500 р.</th>
+                    <td class="catalog__item-value">500 р.</td>
                   </tr>
                 </table>
               </div>
@@ -299,27 +303,27 @@
 
       <div class="container">
         <a href="#" class="footer__logo">
-          <img src="img\logo-text.svg" alt="Логотип" class="footer__logo-img">
+          <img src="img/logo-text.svg" alt="Логотип" class="footer__logo-img">
         </a>
         <ul class="footer__social">
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="28" height="22">
-                <use xlink:href="/img/sprites.svg#vkontakte-ico"></use>
+                <use xlink:href="img/sprites.svg#vkontakte-ico"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="20" height="20">
-                <use xlink:href="/img/sprites.svg#instagram-ico"></use>
+                <use xlink:href="img/sprites.svg#instagram-ico"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="13" height="20">
-                <use xlink:href="/img/sprites.svg#facebook-ico"></use>
+                <use xlink:href="img/sprites.svg#facebook-ico"></use>
               </svg>
             </a>
           </li>
@@ -328,7 +332,7 @@
           <p class="copyright__text">HTML Academy</p>
           <a href="#">
             <svg class="copyright__icon" width="13" height="20">
-              <use xlink:href="/img/sprites.svg#copyright-ico"></use>
+              <use xlink:href="./img/sprites.svg#copyright-ico"></use>
             </svg>
           </a>
         </div>

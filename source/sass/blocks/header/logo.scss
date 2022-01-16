@@ -1,4 +1,12 @@
 .logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   &::before {
     content: "";
     background: url("../img/logo-mobile.svg") no-repeat center;

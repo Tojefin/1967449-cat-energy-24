@@ -33,6 +33,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -40,6 +41,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/menu-toggle.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -91,6 +93,8 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest',
+    'source/img/favicons/icon.svg'
   ], {
     base: 'source'
   })

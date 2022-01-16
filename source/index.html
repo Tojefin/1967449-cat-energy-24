@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preload" href="./fonts/oswaldregular.woff" as="font" type="font/woff">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" type="font/woff">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="./css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/icon.svg">
-    <link rel="manifest" href="manifest.webmanifest">
-    <script defer src="/js/menu-toggle.js"></script>
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/icon.svg">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <script defer src="./js/menu-toggle.js"></script>
   </head>
   <body>
 
@@ -99,10 +103,10 @@
           <div class="example__slider">
             <ul class="example__slider-list">
               <li class="example__slider-item">
-                <img class="example__slider-img" src="img\cat-fat.png" srcset="img\cat-fat@2x.png 2x" alt="Кот до">
+                <img class="example__slider-img" src="img\cat-fat.png" srcset="img\cat-fat@2x.png 2x" alt="Кот до" width="592" height="511">
               </li>
               <li class="example__slider-item">
-                <img class="example__slider-img" src="img\cat-skinny.png" srcset="img\cat-skinny@2x.png 2x" alt="Кот после">
+                <img class="example__slider-img" src="img\cat-skinny.png" srcset="img\cat-skinny@2x.png 2x" alt="Кот после" width="592" height="511">
               </li>
             </ul>
             <div class="example__range">
@@ -136,21 +140,21 @@
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="28" height="22">
-                <use xlink:href="/img/sprites.svg#vkontakte-ico"></use>
+                <use xlink:href="img\sprites.svg#vkontakte-ico"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="20" height="20">
-                <use xlink:href="/img/sprites.svg#instagram-ico"></use>
+                <use xlink:href="img\sprites.svg#instagram-ico"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="13" height="20">
-                <use xlink:href="/img/sprites.svg#facebook-ico"></use>
+                <use xlink:href="img\sprites.svg#facebook-ico"></use>
               </svg>
             </a>
           </li>
@@ -159,7 +163,7 @@
           <p class="copyright__text">HTML Academy</p>
           <a href="#">
             <svg class="copyright__icon" width="13" height="20">
-              <use xlink:href="/img/sprites.svg#copyright-ico"></use>
+              <use xlink:href="./img/sprites.svg#copyright-ico"></use>
             </svg>
           </a>
         </div>

@@ -280,16 +280,68 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.32);
+    padding: 0;
+    padding-bottom: 2px;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+    }
+
+    &:active {
+      padding-bottom: 3px;
+      border-bottom: none;
+    }
+  }
 }
 
 .example__range-input {
+  appearance: none;
+  border-radius: 6px;
   width: 85px;
   height: 14px;
   margin: 0 13px;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  background-color: #ffffff;
+  outline: #ffffff 3px solid;
+  outline-offset: -4px;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    box-shadow: -80px 0 0 75px $basic_green;
+    background: $basic_green;
+    border-radius: 6px;
+  }
 
   @media screen and (min-width: 768px) {
     height: 6px;
     width: 426px;
     margin: 0 23px;
+    border: none;
+    background-color: #dcdcdc;
+    outline: none;
+    overflow: visible;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 34px;
+      height: 34px;
+      box-shadow: none;
+      background: $basic_green;
+      border-radius: 50%;
+      outline: #ffffff 12px solid;
+      outline-offset: -13px;
+      border: 1px solid #cdcdcd;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+      &:active {
+        border: 1px solid $basic_green;
+      }
+    }
   }
 }

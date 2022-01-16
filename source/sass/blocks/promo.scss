@@ -154,10 +154,18 @@
   justify-content: center;
   width: 280px;
   height: 40px;
-  background: #68b738;
+  background: $basic_green;
   color: #ffffff;
   position: relative;
   margin: 0 auto;
+
+  &:hover {
+    background: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media screen and (min-width: 768px) {
     width: 244px;

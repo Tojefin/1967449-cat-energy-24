@@ -19,14 +19,6 @@
   }
 }
 
-.form__input-icon {
-  position: absolute;
-  right: 20px;
-  width: 19px;
-  height: 14px;
-  stroke: #222222;
-}
-
 .form__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -171,12 +163,46 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  border: 1px solid #e7e7e7;
+
+  &:focus {
+    outline: 2px solid $special_dark-grey;
+  }
+
+  &:focus:invalid + .form__input-icon {
+    stroke: #ff8282;
+    fill: #ff8282;
+  }
+
+  &:focus:valid + .form__input-icon {
+    stroke: $basic_green;
+    fill: $basic_green;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 29px;
     padding: 0 20px;
     height: 52px;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  right: 20px;
+  fill: $special_dark-grey-2;
+  stroke: $special_dark-grey-2;
+
+  &--valid {
+    stroke: #68b738;
+  }
+
+  &--error {
+    stroke: #ff8282;
   }
 }
 
@@ -212,14 +238,45 @@
 }
 
 .form__input-radio {
+  appearance: none;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   margin: 0;
   margin-right: 15px;
+  border: 1px solid $special_grey;
+  background-color: $white;
+  position: relative;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:checked::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    top: 7px;
+    left: 7px;
+    background-color: $basic_green;
+  }
 
   @media screen and (min-width: 768px) {
     width: 40px;
     height: 40px;
+
+    &:checked::after {
+      width: 18px;
+      height: 18px;
+      top: 10px;
+      left: 10px;
+    }
   }
 }
 
@@ -272,6 +329,10 @@
   text-transform: uppercase;
   color: $special_dark-grey;
 
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
@@ -317,11 +378,24 @@
 }
 
 .form__input-check {
-  //appearance: none;
+  appearance: none;
   margin: 0;
   margin-right: 16px;
   width: 30px;
   height: 30px;
+  border: 1px solid $special_grey;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:checked {
+    background: url("../img/check.svg") no-repeat 50% 50%;
+  }
 }
 
 .form__submit {
@@ -340,6 +414,14 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $white;
+
+  &:hover {
+    background: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media screen and (min-width: 768px) {
     width: 45%;
