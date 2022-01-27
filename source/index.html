@@ -19,7 +19,7 @@
 
     <header class="header">
       <div class="container">
-        <a href="#" class="logo"></a>
+        <a href="/" class="logo"></a>
         <nav class="menu">
           <button class="menu__button menu__button--opened" type="button" name="menu-toggle" id="menu-button" onclick="toggleMenu()"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="menu__list menu__list--white menu__list--open" id="menu-list">
@@ -97,21 +97,21 @@
                 <dt class="example__info-title">60 дней</dt>
                 <dd class="example__info-description">Затрачено времени</dd>
               </div>
-              <h3 class="example__total">Затраты на питание: <br>15 000 руб. </h3>
             </dl>
+            <p class="example__total">Затраты на питание: <br>15 000 руб.</p>
           </div>
           <div class="example__slider">
             <ul class="example__slider-list">
               <li class="example__slider-item">
-                <img class="example__slider-img" src="img\cat-fat.png" srcset="img\cat-fat@2x.png 2x" alt="Кот до" width="592" height="511">
+                <img class="example__slider-img" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" alt="Кот до" width="592" height="511">
               </li>
               <li class="example__slider-item">
-                <img class="example__slider-img" src="img\cat-skinny.png" srcset="img\cat-skinny@2x.png 2x" alt="Кот после" width="592" height="511">
+                <img class="example__slider-img" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" alt="Кот после" width="592" height="511">
               </li>
             </ul>
             <div class="example__range">
               <button class="example__range-button" type="button" name="button">Было</button>
-              <input type="range" name="" value="" class="example__range-input">
+              <input type="range" value="50" class="example__range-input">
               <button class="example__range-button" type="button" name="button">Стало</button>
             </div>
           </div>
@@ -127,41 +127,39 @@
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
         </div>
-        <div class="contacts__widget">
-          <iframe src="" class="contacts__map"></iframe>
-        </div>
+        <iframe class="contacts__widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A66d77641625b23e3fe92d4864f8721d311547366f7a3e87b86fbc121ddde2bda&amp;source=constructor"></iframe>
       </section>
 
       <div class="container">
-        <a href="#" class="footer__logo">
-          <img src="img\logo-text.svg" alt="Логотип" class="footer__logo-img">
+        <a href="/" class="footer__logo">
+          <img src="img/logo-text.svg" alt="Логотип" class="footer__logo-img">
         </a>
         <ul class="footer__social">
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="28" height="22">
-                <use xlink:href="img\sprites.svg#vkontakte-ico"></use>
+                <use xlink:href="img/sprites.svg#vkontakte-ico"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="20" height="20">
-                <use xlink:href="img\sprites.svg#instagram-ico"></use>
+                <use xlink:href="img/sprites.svg#instagram-ico"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
               <svg class="footer__social-icon" width="13" height="20">
-                <use xlink:href="img\sprites.svg#facebook-ico"></use>
+                <use xlink:href="img/sprites.svg#facebook-ico"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a href="#">
+          <p class="copyright__text"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon" width="13" height="20">
               <use xlink:href="./img/sprites.svg#copyright-ico"></use>
             </svg>
